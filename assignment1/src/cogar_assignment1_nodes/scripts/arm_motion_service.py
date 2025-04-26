@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import rospy
-from assignments.srv import CheckJointState, CheckJointStateResponse
+from srv import CheckJointState, CheckJointStateResponse
 import random
 
 expected_joint_count = 7
