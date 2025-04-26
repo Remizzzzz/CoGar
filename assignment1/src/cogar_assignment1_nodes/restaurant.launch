@@ -1,0 +1,21 @@
+<launch>
+
+  <!-- Orchestration -->
+  <node name="task_assigner" pkg="cogar_assignment1_nodes" type="task_assigner.py" />
+  <node name="robot_verifier" pkg="cogar_assignment1_nodes" type="robot_verifier.py" />
+  <node name="nav_controller" pkg="cogar_assignment1_nodes" type="nav_controller.py" />
+
+  <!-- Order Verification -->
+  <node name="voice_recognizer" pkg="cogar_assignment1_nodes" type="voice_recognizer.py" />
+  <node name="order_verifier" pkg="cogar_assignment1_nodes" type="order_verifier.py" />
+  <node name="error_handler" pkg="cogar_assignment1_nodes" type="error_handler.py" />
+
+  <!-- Food Placement -->
+  <node name="spot_finder" pkg="cogar_assignment1_nodes" type="spot_finder.py" />
+  <node name="sensor_processor" pkg="cogar_assignment1_nodes" type="sensor_processor.py" />
+  <node name="arm_controller" pkg="cogar_assignment1_nodes" type="arm_controller.py" />
+
+  <!-- Existing Services -->
+  <node name="arm_service" pkg="cogar_assignment1_nodes" type="arm_motion_service.py" />
+  <node name="speaker_service" pkg="cogar_assignment1_nodes" type="speaker_service.py" />
+</launch>

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import rospy
+from std_msgs.msg import String
 from sensor_msgs.msg import JointState
-from srv import CheckJointState, CheckJointStateRequest  # Use your package name
+from cogar_assignment1_nodes.srv import CheckJointState, CheckJointStateRequest  # Use your package name
 
 class ArmController:
     def __init__(self):

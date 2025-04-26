@@ -182,9 +182,10 @@ include_directories(
 #   RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
 # )
 
-install(PROGRAMS scripts/arm_motion_service.py scripts/speaker_service.py
-  scripts/task_assigner.py scripts/order_verifier.py scripts/arm_controller.py
-  scripts/robot_verifier.py
+install(PROGRAMS scripts/arm_controller.py scripts/arm_motion_service.py scripts/error_handler.py 
+  scripts/nav_controller.py scripts/order_verifier.py scripts/robot_verifier.py
+  scripts/sensor_processor.py scripts/speaker_service.py scripts/spot_finder.py 
+  scripts/task_assigner.py  scripts/voice_recogniser.py  
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

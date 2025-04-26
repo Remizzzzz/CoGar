@@ -3,7 +3,7 @@
 import rospy
 import random
 
-from srv import Speaker, SpeakerResponse
+from cogar_assignment1_nodes.srv import Speaker, SpeakerResponse
 
 def speaker_callback(req):
     rospy.loginfo(f"Received a message: {req.message}")

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rospy
 from std_msgs.msg import String
-from srv import Speaker, SpeakerRequest  # Use your package name
+from cogar_assignment1_nodes.srv import Speaker, SpeakerRequest  # Use your package name
 
 class OrderVerifier:
     def __init__(self):
