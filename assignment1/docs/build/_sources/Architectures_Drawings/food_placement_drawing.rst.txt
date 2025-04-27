@@ -8,4 +8,5 @@ Food Placement System Diagram
 
    UML diagram showing the Food placement system's components and their relationships.
 
-   * :ref:`Diagrams<diagrams>`
+Explanation
+-----------

@@ -46,8 +46,15 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">System Drawings</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Orchestration System Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#explanation">Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#new-task-process">New task process :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#task-assigning-process">Task Assigning process :</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="order_verification_drawing.html">Order Verification System Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="order_verification_drawing.html#explanation">Explanation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="food_placement_drawing.html">Food Placement System Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="food_placement_drawing.html#explanation">Explanation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../nodes/index.html">ROS Nodes Documentation</a></li>
@@ -88,6 +95,25 @@
 <p><span class="caption-text">UML diagram showing the orchestration system components and their relationships.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
+</section>
+<section id="explanation">
+<h1>Explanation<a class="headerlink" href="#explanation" title="Link to this heading"></a></h1>
+<section id="new-task-process">
+<h2>New task process :<a class="headerlink" href="#new-task-process" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>The order verification system is runned continuously during the service of the restaurant. The staff creates new task by entering inputs in the systems (for example : &lt;dish_name&gt;/&lt;table_number&gt;/&lt;time_of_the_order&gt;)
+Once a task's inputs are entered, the system compute them into a interpretable task for robots, then send it to the task manager. Once it receives the task, the task manager assign it a priority (based on &lt;time_of_order&gt; for example)</p>
+</div></blockquote>
+</section>
+<section id="task-assigning-process">
+<h2>Task Assigning process :<a class="headerlink" href="#task-assigning-process" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>At every time, the system check for robot availability. Once one is available, the system assign it the highest priority task on the task list. If the highest priority task location is already occupied by an other task, then it is derank in priority and the
+system assign the next highest priority task, doing the same verification each time. Once a task is assigned to a robot, the ErrorHandler and the taskManager will listen to the robots event, waiting for an error or an endTaskNotification. If an error is recieved, the errorHandler will
+assign a behaviour to the robot, depending on the error id, and then, depending on the error Id, the errorHandler can notify the staff.
+Once the notifyEndTask token is received, the Task Manager delete the task and actualize task priority.</p>
+</div></blockquote>
+</section>
 </section>
 
 

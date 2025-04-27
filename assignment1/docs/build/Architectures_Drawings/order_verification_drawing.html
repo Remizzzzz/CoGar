@@ -46,11 +46,11 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">System Drawings</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="orchestration_drawing.html">Orchestration System Diagram</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Order Verification System Diagram</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#explanation">Explanation</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="orchestration_drawing.html#explanation">Explanation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Order Verification System Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#explanation">Explanation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="food_placement_drawing.html">Food Placement System Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="food_placement_drawing.html#explanation">Explanation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../nodes/index.html">ROS Nodes Documentation</a></li>
@@ -91,14 +91,14 @@
 <p><span class="caption-text">UML diagram showing the order verification system's components and their relationships.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
+</section>
 <section id="explanation">
-<h2>Explanation<a class="headerlink" href="#explanation" title="Link to this heading"></a></h2>
+<h1>Explanation<a class="headerlink" href="#explanation" title="Link to this heading"></a></h1>
 <blockquote>
 <div><p>This diagram shows the internal behaviour of the order verification component. This behaviour is activated whenever a robot receive a order challenge from a customer during the service of the table.
 Upon receiving the challenge, the robot will interpret the message and verify with the data of the task assigned to it if the order is wrong. If it doesn't find any issues after 3 verification, it'll
 notify the staff of the issue then continue its task while taking the behaviour adapted to an error case. Once the error is handled, the robot continue its task.</p>
 </div></blockquote>
-</section>
 </section>
 
 
