@@ -1,0 +1,8 @@
+# Request: a JointState-like structure
+float64[] positions
+float64[] velocities
+float64[] efforts
+
+---
+# Response: boolean indicating if the dimensions match
+bool success

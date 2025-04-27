@@ -1,0 +1,5 @@
+<launch>
+  <test test-name="test_task_assigner" pkg="cogar_assignment1_nodes" type="test_task_assigner.py" />
+  <test test-name="test_speaker" pkg="cogar_assignment1_nodes" type="test_speaker.py" />
+  <test test-name="test_spot_finder" pkg="cogar_assignment1_nodes" type="test_spot_finder.py" />
+</launch>
