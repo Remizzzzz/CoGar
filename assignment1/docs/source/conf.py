@@ -25,8 +25,8 @@ release = '1'
 
 extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
-    'sphinx.ext.napoleon',
-    'sphinxcontrib.ros']
+    'sphinx.ext.napoleon']
+    # 'sphinxcontrib.ros']
 
 templates_path = ['_templates']
 exclude_patterns = []
