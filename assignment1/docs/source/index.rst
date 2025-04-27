@@ -10,9 +10,9 @@ Welcome to Cogar Autonomous waiters in a sushi restaurant's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   drawings/index
+   introduction  
+   Architectures_Drawings/index
    nodes/index
-   architecture/index
    testing/index
 
 
