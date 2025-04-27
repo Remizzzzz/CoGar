@@ -6,6 +6,18 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../../src/cogar_assignment1_nodes/scripts'))
+
+
+
+
+
+
+
+
+
 project = 'Cogar Autonomous waiters in a sushi restaurant'
 # copyright = '''2025
 #                Hafiz Abdul Hayee  
@@ -45,9 +57,6 @@ html_static_path = ['_static']
 
 
 
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('../../scripts'))
 
 # extensions = [
     
