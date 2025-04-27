@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orchestration System Diagram &mdash; Cogar Autonomous waiters in a sushi restaurant 1 documentation</title>
+  <title>Order Verification System Diagram &mdash; Cogar Autonomous waiters in a sushi restaurant 1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
@@ -19,8 +19,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Order Verification System Diagram" href="order_verification_drawing.html" />
-    <link rel="prev" title="System Drawings" href="index.html" /> 
+    <link rel="next" title="Food Placement System Diagram" href="food_placement_drawing.html" />
+    <link rel="prev" title="Orchestration System Diagram" href="orchestration_drawing.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,8 +45,11 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">System Drawings</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Orchestration System Diagram</a></li>
-<li class="toctree-l2"><a class="reference internal" href="order_verification_drawing.html">Order Verification System Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orchestration_drawing.html">Orchestration System Diagram</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Order Verification System Diagram</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#explanation">Explanation</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="food_placement_drawing.html">Food Placement System Diagram</a></li>
 </ul>
 </li>
@@ -69,9 +72,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">System Drawings</a></li>
-      <li class="breadcrumb-item active">Orchestration System Diagram</li>
+      <li class="breadcrumb-item active">Order Verification System Diagram</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/Architectures_Drawings/orchestration_drawing.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/Architectures_Drawings/order_verification_drawing.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -79,23 +82,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="orchestration-system-diagram">
-<h1>Orchestration System Diagram<a class="headerlink" href="#orchestration-system-diagram" title="Link to this heading"></a></h1>
+  <section id="order-verification-system-diagram">
+<h1>Order Verification System Diagram<a class="headerlink" href="#order-verification-system-diagram" title="Link to this heading"></a></h1>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../_images/OrchestrationSystemBehaviouralDiagram.drawio.png"><img alt="Orchestration System Diagram" src="../_images/OrchestrationSystemBehaviouralDiagram.drawio.png" style="width: 600px;" />
+<a class="reference internal image-reference" href="../_images/orderVerifBDIAGRAM.drawio.png"><img alt="Order Verification System Diagram" src="../_images/orderVerifBDIAGRAM.drawio.png" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">UML diagram showing the orchestration system components and their relationships.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">UML diagram showing the order verification system's components and their relationships.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
+<section id="explanation">
+<h2>Explanation<a class="headerlink" href="#explanation" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>This diagram shows the internal behaviour of the order verification component. This behaviour is activated whenever a robot receive a order challenge from a customer during the service of the table.
+Upon receiving the challenge, the robot will interpret the message and verify with the data of the task assigned to it if the order is wrong. If it doesn't find any issues after 3 verification, it'll
+notify the staff of the issue then continue its task while taking the behaviour adapted to an error case. Once the error is handled, the robot continue its task.</p>
+</div></blockquote>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="System Drawings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="order_verification_drawing.html" class="btn btn-neutral float-right" title="Order Verification System Diagram" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="orchestration_drawing.html" class="btn btn-neutral float-left" title="Orchestration System Diagram" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="food_placement_drawing.html" class="btn btn-neutral float-right" title="Food Placement System Diagram" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
